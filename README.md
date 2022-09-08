@@ -6,7 +6,7 @@
 
 #İsteklerden bahsetmem gerekirse 
 
-# /product/list-after-date isteği belli bir tarihten sonraki ürünleri gösterir
+#/product/list-after-date isteği belli bir tarihten sonraki ürünleri gösterir
 
 #/product/list-before-date isteği ise belli bir tarihten önceki ürünleri gösterir.
 
