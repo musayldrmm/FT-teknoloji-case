@@ -6,14 +6,14 @@
 
 #İsteklerden bahsetmem gerekirse 
 
-#/product/list-after-date isteği belli bir tarihten sonraki ürünleri gösterir
+#/product/list-after-date isteği belli bir tarihten sonraki ürünleri gösterir.Burda önemli nokta tarihin yyyy-mm-dd formatında olmasıdır.
 
-#/product/list-before-date isteği ise belli bir tarihten önceki ürünleri gösterir.
+#/product/list-before-date isteği ise belli bir tarihten önceki ürünleri gösterir.Burda önemli nokta tarihin yyyy-mm-dd formatında olmasıdır.
 
 #/product-comment/one-customer-comment/{id} isteği bir kullanıcının yaptığı ürün yorumlarını listeler.
 
 #/product-comment/one-product-comment/{id} isteği bir ürüne ait yapılan yorumları listeler.
 
-#/product-comment/one-customer-date-between isteği ile bir kullanıcının spesifik tarihler arasında yaptığı yorumlar listelenir
+#/product-comment/one-customer-date-between isteği ile bir kullanıcının spesifik tarihler arasında yaptığı yorumlar listelenir.Burda önemli nokta tarihlerin yyyy-mm-dd formatında olmasıdır.
 
-#/product-comment/one-product-date-between isteği ile bir ürünün  spesifik tarihler arasında aldığı yorumlar listelenir
+#/product-comment/one-product-date-between isteği ile bir ürünün  spesifik tarihler arasında aldığı yorumlar listelenir.Burda önemli nokta tarihlerin yyyy-mm-dd formatında olmasıdır.
