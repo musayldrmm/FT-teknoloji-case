@@ -1,7 +1,6 @@
 package com.FtTeknoloji.FtTeknoloji.Controller;
 
 import com.FtTeknoloji.FtTeknoloji.Service.ProductCommentService;
-import com.FtTeknoloji.FtTeknoloji.entity.BetweenDateAndId;
 import com.FtTeknoloji.FtTeknoloji.entity.ProductComment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -36,18 +35,16 @@ public class ProductCommentController {
     }
 
     @PostMapping("/one-product-date-between")
-    public List<ProductComment> getProductCommentBetweenDateAndProductId(@RequestBody BetweenDateAndId checkCommentDateAndId) {
-        Date date = checkCommentDateAndId.getDate1();
-        Date secondate = checkCommentDateAndId.getDate2();
-        Long Id = checkCommentDateAndId.getId();
-        return productCommentService.getProductCommentBetweenDateAndProductId(date, secondate, Id);
+    public List<ProductComment> getProductCommentBetweenDateAndProductId(@RequestParam("firstDate")Date firstdate,
+                                                                         @RequestParam("secondDate")Date seconddate,
+                                                                         @RequestParam("ID") long id) {
+        return productCommentService.getProductCommentBetweenDateAndProductId(firstdate, seconddate, id);
     }
 
     @PostMapping("/one-customer-date-between")
-    public List<ProductComment> getProductCommentBetweenDateAndCustomerId(@RequestBody BetweenDateAndId checkCommentDateAndId) {
-        Date date = checkCommentDateAndId.getDate1();
-        Date secondate = checkCommentDateAndId.getDate2();
-        Long Id = checkCommentDateAndId.getId();
-        return productCommentService.getProductCommentBetweenDateAndCustomerId(date, secondate, Id);
+    public List<ProductComment> getProductCommentBetweenDateAndCustomerId(@RequestParam("firstDate")Date firstdate,
+                                                                          @RequestParam("secondDate")Date seconddate,
+                                                                          @RequestParam("ID") long id) {
+        return productCommentService.getProductCommentBetweenDateAndCustomerId(firstdate, seconddate, id);
     }
 }

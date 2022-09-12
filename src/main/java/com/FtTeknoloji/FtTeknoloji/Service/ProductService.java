@@ -1,12 +1,10 @@
 package com.FtTeknoloji.FtTeknoloji.Service;
 
-import com.FtTeknoloji.FtTeknoloji.entity.CheckExpredation;
 import com.FtTeknoloji.FtTeknoloji.entity.Product;
 import com.FtTeknoloji.FtTeknoloji.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.sql.Date;
 import java.util.List;
 

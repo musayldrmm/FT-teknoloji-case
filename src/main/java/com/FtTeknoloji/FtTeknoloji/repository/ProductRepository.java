@@ -1,6 +1,5 @@
 package com.FtTeknoloji.FtTeknoloji.repository;
 
-import com.FtTeknoloji.FtTeknoloji.entity.CheckExpredation;
 import com.FtTeknoloji.FtTeknoloji.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
